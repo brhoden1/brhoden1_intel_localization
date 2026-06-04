@@ -54,7 +54,7 @@ section {
 }
 
 /* Card styling */
-section > div {
+section > div.card {
 	flex-shrink: 0; /* prevent cards from shrinking */
 	width: 300px; /* fixed width for each card */
 	min-width: display-width; /* minimum width for each card */
@@ -70,25 +70,25 @@ section > div {
 }
 
 /* Card hover effect */
-section > div:hover {
+section > div.card:hover {
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* darker shadow on hover */
 }
 
 /* Card headings */
-section > div h2 {
+section > div.card h2 {
 	margin: 0 0 0.5rem 0;
 	font-size: 1.5rem;
 	color: #0a558e; /* Intel blue */
 }
 
-section > div h3 {
+section > div.card h3 {
 	margin: 0 0 1rem 0;
 	font-size: 1.1rem;
 	color: #333333; /* dark gray */
 }
 
 /* Card images */
-section > div img {
+section > div.card img {
 	width: 100%; /* full width of card */
 	height: 200px; /* fixed height */
 	object-fit: cover; /* fill space while maintaining aspect ratio */
@@ -97,7 +97,7 @@ section > div img {
 }
 
 /* Card text overlay */
-section > div p {
+section > div.card p {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -116,15 +116,8 @@ section > div p {
 	justify-content: center;
 }
 
-section > div:hover p {
+section > div.card:hover p {
 	opacity: 1;
-}
-
-body > p {
-  text-align: center;
-  padding: 1rem;
-  font-size: 0.9rem;
-  color: #666666; /* medium gray */
 }
 
 /* Small screens: scale headings down and stack cards vertically */
@@ -136,7 +129,7 @@ body > p {
 	}
 	
 	/* Make cards full width on small screens */
-	section > div {
+	section > div.card {
 		flex-shrink: 1; /* allow cards to shrink */
     flex-grow: 2;
 		width: device-width; /* take full width of device */
