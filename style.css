@@ -40,7 +40,7 @@ header p {
 }
 
 /* Timeline Cards Section */
-section {
+section.timeline-cards {
 	display: flex; /* display cards in a row */
 	flex-wrap: nowrap; /* keep cards in a single row */
 	gap: 1.5rem; /* space between cards */
@@ -54,7 +54,7 @@ section {
 }
 
 /* Card styling */
-section > div.card {
+section.timeline-cards > div.card {
 	flex-shrink: 0; /* prevent cards from shrinking */
 	width: 300px; /* fixed width for each card */
 	min-width: display-width; /* minimum width for each card */
@@ -70,25 +70,25 @@ section > div.card {
 }
 
 /* Card hover effect */
-section > div.card:hover {
+section.timeline-cards > div.card:hover {
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* darker shadow on hover */
 }
 
 /* Card headings */
-section > div.card h2 {
+section.timeline-cards > div.card h2 {
 	margin: 0 0 0.5rem 0;
 	font-size: 1.5rem;
 	color: #0a558e; /* Intel blue */
 }
 
-section > div.card h3 {
+section.timeline-cards > div.card h3 {
 	margin: 0 0 1rem 0;
 	font-size: 1.1rem;
 	color: #333333; /* dark gray */
 }
 
 /* Card images */
-section > div.card img {
+section.timeline-cards > div.card img {
 	width: 100%; /* full width of card */
 	height: 200px; /* fixed height */
 	object-fit: cover; /* fill space while maintaining aspect ratio */
@@ -97,7 +97,7 @@ section > div.card img {
 }
 
 /* Card text overlay */
-section > div.card p {
+section.timeline-cards > div.card p {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -116,20 +116,45 @@ section > div.card p {
 	justify-content: center;
 }
 
-section > div.card:hover p {
+section.timeline-cards > div.card:hover p {
 	opacity: 1;
+}
+
+/* Responsive cards for the three-column section */
+.column1,
+.column2,
+.column3 {
+	background: #ffffff;
+	border: 1px solid #e0e0e0;
+	padding: 1.25rem;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+}
+
+.column1 h2,
+.column2 h2,
+.column3 h2 {
+	color: #0a558e;
+	font-size: 1.4rem;
+	margin-bottom: 0.75rem;
+}
+
+.column1 a,
+.column2 a,
+.column3 a {
+	color: #0068B5;
+	font-weight: 600;
 }
 
 /* Small screens: scale headings down and stack cards vertically */
 @media (max-width: 600px) {
 	/* Stack cards in a single column on small screens */
-	section {
+	section.timeline-cards {
 		flex-wrap: wrap; /* allow wrapping to next line */
 		overflow-x: visible; /* disable horizontal scrolling */
 	}
 	
 	/* Make cards full width on small screens */
-	section > div.card {
+	section.timeline-cards > div.card {
 		flex-shrink: 1; /* allow cards to shrink */
     flex-grow: 2;
 		width: device-width; /* take full width of device */
