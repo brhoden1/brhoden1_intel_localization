@@ -120,16 +120,6 @@ section.timeline-cards > div.card:hover p {
 	opacity: 1;
 }
 
-body > p {
-	position:sticky;
-	bottom: 0;
-	text-align: center;
-	padding: 1rem;
-	font-size: 0.9rem;
-	color: #333333; /* medium gray */
-	background: #efefef;
-}
-
 /* Bootstrap button corners */
 .btn,
 .btn-primary,
@@ -164,6 +154,50 @@ body > p {
 .column2,
 .column3 {
 	padding: 1.25rem;
+}
+
+/* Simple Intel-style footer */
+.site-footer {
+	background: #ececec;
+	border-top: 1px solid #d5d5d5;
+	padding: 1.5rem 1rem 1rem;
+	color: #333333;
+}
+
+.site-footer__top {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	gap: 1rem;
+}
+
+.site-footer__brand img {
+	display: block;
+	width: 60px;
+	height: auto;
+}
+
+.site-footer__nav {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
+}
+
+.site-footer__nav a {
+	color: #333333;
+	text-decoration: none;
+	font-weight: 300;
+}
+
+.site-footer__nav a:hover {
+	text-decoration: underline;
+}
+
+.site-footer__copy {
+	margin: 0.75rem 0 0;
+	font-size: 0.9rem;
+	color: #555555;
 }
 
 .column1 h2,
