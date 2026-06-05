@@ -180,9 +180,20 @@
   </section>
 
   <!-- Subscription Form -->
-  <section>
-    <h2>Subscribe to our Newsletter</h2>
-    <!-- Add form here -->
+  <section class="subscription-form py-5 bg-light">
+    <div class="container">
+      <h2 class="mb-3">Subscribe to our Newsletter</h2>
+      <p class="text-light">Get updates on Intel's sustainability initiatives and innovation stories.</p>
+      <form class="row g-3 align-items-center">
+        <div class="col-sm-8 col-md-9">
+          <label for="newsletterEmail" class="visually-hidden">Email address</label>
+          <input type="email" class="form-control form-control-lg" id="newsletterEmail" placeholder="Enter your email address" required />
+        </div>
+        <div class="col-sm-4 col-md-3">
+          <button type="submit" class="btn btn-outline-light btn-lg w-100">Sign Up</button>
+        </div>
+      </form>
+    </div>
   </section>
 </body>
 </html>

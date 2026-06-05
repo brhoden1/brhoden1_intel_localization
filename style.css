@@ -120,6 +120,35 @@ section.timeline-cards > div.card:hover p {
 	opacity: 1;
 }
 
+/* Bootstrap button corners */
+.btn,
+.btn-primary,
+.btn-outline-primary {
+	border-radius: 0 !important;
+}
+
+/* Subscription form section */
+.subscription-form {
+	background: linear-gradient(180deg, #0068B5 0%, #004a7a 100%);
+	color: #ffffff;
+}
+
+.subscription-form input
+{
+	border-radius: 0 !important;
+}
+
+.subscription-form h2 {
+	font-size: 1.4rem;
+	text-align: center;
+}
+
+.subscription-form p {
+	font-size: 0.95rem;
+	text-align: center;
+	color: #eaf4ff;
+}
+
 /* Responsive cards for the three-column section */
 .column1,
 .column2,
