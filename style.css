@@ -120,6 +120,16 @@ section.timeline-cards > div.card:hover p {
 	opacity: 1;
 }
 
+body > p {
+	position:sticky;
+	bottom: 0;
+	text-align: center;
+	padding: 1rem;
+	font-size: 0.9rem;
+	color: #333333; /* medium gray */
+	background: #efefef;
+}
+
 /* Bootstrap button corners */
 .btn,
 .btn-primary,
@@ -130,7 +140,7 @@ section.timeline-cards > div.card:hover p {
 /* Subscription form section */
 .subscription-form {
 	background: linear-gradient(180deg, #0068B5 0%, #004a7a 100%);
-	color: #ffffff;
+	color: #efefef;
 }
 
 .subscription-form input
